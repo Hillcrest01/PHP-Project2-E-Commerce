@@ -2,6 +2,7 @@
 
 include("database.php");
 
+//We check if the data has been submitted via the form.
 if (isset($_POST['submit'])) {
   $name = mysqli_real_escape_string($conn, $_POST['productName']);
   $description  = mysqli_real_escape_string($conn, $_POST['productDescription']);
